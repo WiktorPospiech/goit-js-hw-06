@@ -23,3 +23,14 @@ const markup = images
 
 gallery.insertAdjacentHTML("beforeend", markup);
 gallery.insertAdjacentHTML("beforebegin", "<h2>Beautifull Gallery</h2>");
+
+const header = document.querySelector("h2");
+header.style.color = "#f5cb42";
+header.style.textAlign = "center";
+
+const pictures = document.querySelector(".gallery");
+pictures.style.display = "flex";
+pictures.style.flexFlow = "row wrap";
+pictures.style.gap = "30px";
+pictures.style.justifyContent = "center";
+pictures.style.listStyle = "none";
